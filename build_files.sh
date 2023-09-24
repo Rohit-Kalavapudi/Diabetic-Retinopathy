@@ -17,4 +17,4 @@ pip install matplotlib==3.5.1
 pip install matplotlib.image
 pip install psycopg2 
 pip install psycopg2-binary
-python3.9 manage.py collectstatic
+python3.11 manage.py collectstatic
