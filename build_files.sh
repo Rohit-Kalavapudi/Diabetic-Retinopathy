@@ -1,7 +1,7 @@
 # pip install -r requirements.txt
-python3.11 manage.py collectstatic
+python manage.py collectstatic
 pip install django
-
+pip install flask
 pip install home
 pip install datetime
 pip install django.contrib
