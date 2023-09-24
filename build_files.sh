@@ -1,4 +1,4 @@
-pip install -r requirements.txt
+# pip install -r requirements.txt
 pip install django
 pip install django==4.0.7
 pip install home
