@@ -119,8 +119,7 @@ pip install zope.interface==6.0
 pip3.9 install psycopg2-binary
 sudo apt-get install libpq-dev
 sudo yum install postgresql-devel
-pip3.9 install psycopg2
-pip3.9 install --install-option="--pg-config=/path/to/pg_config" psycopg2
+pip install --install-option="--pg-config=/path/to/pg_config" psycopg2
 
 pip install psycopg2 
 pip install psycopg2-binary
