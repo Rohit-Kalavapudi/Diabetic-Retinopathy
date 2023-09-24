@@ -6,8 +6,8 @@ from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
 # import tensorflow as tf
 # from keras.models import load_model
-import tensorflow_hub as hub
-import tensorflow as tf
+# import tensorflow_hub as hub
+# import tensorflow as tf
 import numpy as np 
 import cv2
 import os
@@ -36,25 +36,26 @@ def index(request):
     return render(request,'index.html')
 
 def predict(img,model):
-    img1=mpimg.imread(img)
-    img1=cv2.resize(img1,(224,224),3)
-    img1=np.array(img1)/255.0
-    img1[np.newaxis,...].shape
-    prediction=model.predict(img1[np.newaxis,...])
-    prediction=np.argmax(prediction)
-    # ar=np.array([left])
-    # prediction=model.predict()
-    # print(prediction)
-    if (prediction==0):
-        res='no dr'
-    elif(prediction==1):
-        res= 'mild dr'
-    elif(prediction==2):
-        res= 'moderate dr'
-    elif(prediction==3):
-        res= 'severe'
-    else:
-        res= 'proliferate'  
+    # img1=mpimg.imread(img)
+    # img1=cv2.resize(img1,(224,224),3)
+    # img1=np.array(img1)/255.0
+    # img1[np.newaxis,...].shape
+    # prediction=model.predict(img1[np.newaxis,...])
+    # prediction=np.argmax(prediction)
+    # # ar=np.array([left])
+    # # prediction=model.predict()
+    # # print(prediction)
+    # if (prediction==0):
+    #     res='no dr'
+    # elif(prediction==1):
+    #     res= 'mild dr'
+    # elif(prediction==2):
+    #     res= 'moderate dr'
+    # elif(prediction==3):
+    #     res= 'severe'
+    # else:
+    #     res= 'proliferate' 
+    res="sdf" 
     return res
 def contact(request):
     if(request.method=='POST'):
@@ -64,9 +65,11 @@ def contact(request):
         desc=request.POST.get('desc')
         left=request.FILES.get('left')
         right=request.FILES.get('right')
-        model=tf.keras.models.load_model('final.h5', custom_objects={'KerasLayer':hub.KerasLayer})
-        res1=predict(left,model)
-        res2=predict(right,model)
+        # model=tf.keras.models.load_model('final.h5', custom_objects={'KerasLayer':hub.KerasLayer})
+        # res1=predict(left,model)
+        # res2=predict(right,model)
+        res1=1
+        res2=2
         fs = FileSystemStorage()
         f1 = fs.save(left.name,left)
         f2 = fs.save(right.name,right)
