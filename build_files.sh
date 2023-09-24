@@ -10,6 +10,7 @@ pip install httpcore
 pip install Jinja2
 pip install joblib
 pip install keras
+pip install gunicorn
 pip install matplotlib
 pip install numpy
 pip install opencv-python
