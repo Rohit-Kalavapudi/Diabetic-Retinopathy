@@ -26,14 +26,8 @@ pip install rsa
 pip install scikit-learn
 pip install scipy
 pip install six
-pip install sklearn
-pip install tensorboard
-pip install tensorboard-data-server
 pip install tensorflow
-pip install tensorflow-estimator
 pip install tensorflow-hub
-pip install tensorflow-intel
-pip install tensorflow-io-gcs-filesystem
 pip install websockets
 pip install Werkzeug
 
