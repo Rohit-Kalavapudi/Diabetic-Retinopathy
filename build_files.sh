@@ -116,6 +116,11 @@ pip install Werkzeug==2.3.7
 pip install wrapt==1.15.0
 pip install zope.event==5.0
 pip install zope.interface==6.0
+pip3.9 install psycopg2-binary
+sudo apt-get install libpq-dev
+sudo yum install postgresql-devel
+pip3.9 install psycopg2
+pip3.9 install --install-option="--pg-config=/path/to/pg_config" psycopg2
 
 pip install psycopg2 
 pip install psycopg2-binary
