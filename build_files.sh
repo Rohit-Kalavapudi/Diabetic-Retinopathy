@@ -15,4 +15,5 @@ pip install os
 pip install PIL==9.1.0
 pip install matplotlib==3.5.1
 pip install matplotlib.image
+pip install psycopg2 
 python3.9 manage.py collectstatic
