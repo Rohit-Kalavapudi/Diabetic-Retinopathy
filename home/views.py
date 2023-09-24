@@ -2,23 +2,24 @@ from django.shortcuts import render,HttpResponse
 from home.models import Contact
 from datetime import datetime
 from django.contrib import messages
-import pickle
+# import pickle
 from django.core.files.storage import FileSystemStorage
-import tensorflow as tf
-from keras.models import load_model
+# import tensorflow as tf
+# from keras.models import load_model
 import tensorflow_hub as hub
+import tensorflow as tf
 import numpy as np 
 import cv2
 import os
-from PIL import Image
-import matplotlib.pyplot as plt
+# from PIL import Image
+# import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-# from django.shortcuts import render,HttpResponse,redirect
-# from django.core.files.storage import FileSystemStorage
-# from django.contrib.auth.models import User
-# from django.contrib.auth import authenticate,logout
-# from django.contrib import messages
-# from django.contrib.auth import login
+from django.shortcuts import render,HttpResponse,redirect
+from django.core.files.storage import FileSystemStorage
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate,logout
+from django.contrib import messages
+from django.contrib.auth import login
 from django.shortcuts import render,HttpResponse,redirect
 # from eyes.models import Information
 from django.core.files.storage import FileSystemStorage
