@@ -116,7 +116,7 @@ pip install Werkzeug==2.3.7
 pip install wrapt==1.15.0
 pip install zope.event==5.0
 pip install zope.interface==6.0
-pip3.9 install psycopg2-binary
+pip install psycopg2-binary
 
 
 
