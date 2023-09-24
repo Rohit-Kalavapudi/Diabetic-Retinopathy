@@ -117,8 +117,7 @@ pip install wrapt==1.15.0
 pip install zope.event==5.0
 pip install zope.interface==6.0
 pip3.9 install psycopg2-binary
-sudo apt-get install libpq-dev
-sudo yum install postgresql-devel
+
 
 
 # pip install psycopg2 
