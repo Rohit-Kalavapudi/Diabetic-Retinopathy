@@ -29,7 +29,7 @@ DEBUG = True
 #Added manually
 # AUTH_USER_MODEL='accounts.User'
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost','dr-szr0.onrender.com']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost','diabetic-retinopathy-1.onrender.com']
 
 
 # Application definition
