@@ -4,7 +4,7 @@ from datetime import datetime
 from django.contrib import messages
 # import pickle
 from django.core.files.storage import FileSystemStorage
-# import tensorflow as tf
+import tensorflow as tf
 # from keras.models import load_model
 # import tensorflow_hub as hub
 # import tensorflow as tf
