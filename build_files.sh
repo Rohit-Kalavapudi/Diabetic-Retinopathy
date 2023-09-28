@@ -26,12 +26,8 @@ pip install rsa
 pip install scikit-learn
 pip install scipy
 pip install six
-pip install tensorflow
-pip install tensorflow-hub
 pip install websockets
 pip install Werkzeug
-
-
 
 
 # pip install psycopg2 
